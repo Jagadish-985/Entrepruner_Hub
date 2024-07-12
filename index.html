@@ -5,336 +5,156 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
-   <!-- font awesome cdn link  -->
+   <!-- Font Awesome -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-   <!-- custom css file link  -->
-   <link rel="stylesheet" href="css/style.css">
+   <!-- Custom CSS -->
+   <!--link rel="stylesheet" href="css/style.css--">
 
-   <!-- custom js file link  -->
-   <script src="js/script.js" defer></script>
+   <!-- Google Fonts - Roboto -->
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
+   <title>Entrepreneur Showcase</title>
+   
+   <!-- Bootstrap CSS -->
+   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+   <!-- AOS CSS for animations -->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+   
+   <!-- Custom CSS for additional styling -->
+   <style>
+      body {
+         font-family: 'Roboto', sans-serif;
+         background-color: #f2f2f2;
+      }
+
+      header {
+         background-color: #343a40;
+         color: #ffffff;
+         padding: 20px 0;
+         text-align: center;
+      }
+
+      header h1 {
+         margin: 0;
+         font-size: 2.5rem;
+         font-weight: 700;
+      }
+
+      header p {
+         font-size: 1.2rem;
+         font-weight: 500;
+         margin-bottom: 0;
+      }
+
+      .categories {
+         padding: 50px 0;
+      }
+
+      .category-grid {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+         gap: 30px;
+      }
+
+      .category {
+         background-color: #ffffff;
+         border-radius: 8px;
+         overflow: hidden;
+         box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+         transition: transform 0.3s ease;
+         cursor: pointer;
+      }
+
+      .category:hover {
+         transform: translateY(-5px);
+      }
+
+      .category img {
+         width: 100%;
+         height: auto;
+         border-bottom: 1px solid #dee2e6;
+      }
+
+      .category h3 {
+         font-size: 1.5rem;
+         padding: 15px 20px;
+         margin: 0;
+         font-weight: 500;
+         text-align: center;
+      }
+
+      footer {
+         background-color: #343a40;
+         color: #ffffff;
+         text-align: center;
+         padding: 20px 0;
+      }
+
+      footer p {
+         margin: 0;
+         font-size: 1rem;
+      }
+   </style>
 </head>
 <body>
    
-<div class="container">
+<header>
+   <div class="container">
+      <h1>THE ENTREPRENEUR SHOWCASE</h1>
+      <p>Discover the stories of impactful entrepreneurs</p>
+   </div>
+</header>
 
-   <h3 class="title"> Social Entrepreneurs</h3>
-
-   <div class="products-container">
-      <!-- Example product card -->
-      <div class="product" data-name="p-1">
-         <img src="images/1.jpg" alt="">
-         <h3>Dr. Harish Hande</h3>
-      </div>
-      <div class="product" data-name="p-2">
-         <img src="images/2.jpg" alt="">
-         <h3>Bindeshwar Pathak</h3>
-      </div>
-      <div class="product" data-name="p-3">
-         <img src="images/3.jpg" alt="">
-         <h3>Ronnie Screwvala</h3>
-      </div>
-      <div class="product" data-name="p-4">
-         <img src="images/4.jpg" alt="">
-         <h3>Rajendra Singh</h3>
-      </div>
-      <div class="product" data-name="p-5">
-         <img src="images/5.jpeg" alt="">
-         <h3>Arunachalam Muruganantham</h3>
-      </div>
-      <div class="product" data-name="p-6">
-         <img src="images/6.jpg" alt="">
-         <h3>Dr. Govindappa Venkataswamy</h3>
-      </div>
-      <div class="product" data-name="p-7">
-         <img src="images/7.jpg" alt="">
-         <h3>Shiv Nadar</h3>
-      </div>
-      <div class="product" data-name="p-8">
-         <img src="images/8.jpg" alt="">
-         <h3>Kiran Bedi</h3>
-      </div>
-      
-      <div class="product" data-name="p-10">
-         <img src="images/9.jpg" alt="">
-         <h3>Madhu Pandit Dasa</h3>
-      </div>
-      
-      <div class="product" data-name="p-12">
-         <img src="images/10.jpg" alt="">
-         <h3>Elango Rangaswamy</h3>
-      </div>
-      <div class="product" data-name="p-13">
-         <img src="images/paw.jpg" alt="">
-         <h3>Pawan Sinha</h3>
-      </div>
-      <div class="product" data-name="p-14">
-         <img src="images/11.jpg" alt="">
-         <h3>Malini Mehra</h3>
-      </div>
-      <div class="product" data-name="p-15">
-         <img src="images/12.jpg" alt="">
-         <h3>Medha Patkar</h3>
-      </div>
-      <div class="product" data-name="p-16">
-         <img src="images/13.jpg" alt="">
-         <h3>Sandeep Ahuja</h3>
-      </div>
-      <div class="product" data-name="p-17">
-         <img src="images/14.jpg" alt="">
-         <h3>Priya Naik</h3>
-      </div>
-      <div class="product" data-name="p-18">
-         <img src="images/15.jpg" alt="">
-         <h3>Dr. Sunitha Krishnan</h3>
-      </div>
-      <div class="product" data-name="p-19">
-         <img src="images/16.jpg" alt="">
-         <h3>Manjul Bhargava</h3>
-      </div>
-      <div class="product" data-name="p-20">
-         <img src="images/17.jpg" alt="">
-         <h3>Dr. Abhay Bang</h3>
-      </div>
-
-      <div class="product" data-name="p-22">
-         <img src="images/18.jpg" alt="">
-         <h3>Vikram Patel</h3>
-      </div>
-
-      <div class="product" data-name="p-24">
-         <img src="images/19.jpg" alt="">
-         <h3>Brij Kothari</h3>
-      </div>
-      <div class="product" data-name="p-25">
-         <img src="images/20.jpg" alt="">
-         <h3>Deep Joshi</h3>
+<section class="categories">
+   <div class="container">
+      <h2 class="text-center mb-5">CATAGORIES</h2>
+      <div class="category-grid">
+         <div class="category" data-link="p1.html">
+            <img src="images/social.jpg" alt="Social Entrepreneurs">
+            <h3>Social Entrepreneurs</h3>
+         </div>
+         <div class="category" data-link="p2.html">
+            <img src="images/women.jpg" alt="Women Entrepreneurs">
+            <h3>Women Entrepreneurs</h3>
+         </div>
+         <div class="category" data-link="p3.html">
+            <img src="images/tech.jpg" alt="Tech Entrepreneurs">
+            <h3>Technology Entrepreneurs</h3>
+         </div>
+         <div class="category" data-link="p4.html">
+            <img src="images/intra.jpg" alt="Intrapreneur">
+            <h3>Various Intrapreneurs</h3>
+         </div>
       </div>
    </div>
-</div>
+</section>
 
-<div class="products-preview">
-
-   <!-- Example preview card -->
-   <div class="preview" data-target="p-1">
-      <i class="fas fa-times"></i>
-      <img src="images/1.jpg" alt="">
-      <h3>Dr. Harish Hande</h3>
-      <p>Co-founder of SELCO India, providing solar energy solutions to rural areas</p>
-      <div class="buttons">
-         <a href="https://en.wikipedia.org/wiki/Harish_Hande" class="Learn More">Learn More</a>
-      </div>
+<footer>
+   <div class="container">
+      <p>&copy; 2024 Entrepreneur Showcase. All rights reserved.</p>
+      <p>&copy; Developed by Akshay P.M. -- B. Jagadish -- Sanjeev Janardhan</p>
    </div>
+</footer>
 
-   <div class="preview" data-target="p-2">
-      <i class="fas fa-times"></i>
-      <img src="images/2.jpg" alt="">
-      <h3>Bindeshwar Pathak</h3>
-      <p>Founder of Sulabh International, promoting sanitation and hygiene.</p>
-      <div class="buttons">
-         <a href="https://en.wikipedia.org/wiki/Bindeshwar_Pathak" class="Learn More">Learn More</a>
-      </div>
-   </div>
+<!-- Bootstrap JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-   <div class="preview" data-target="p-3">
-      <i class="fas fa-times"></i>
-      <img src="images/3.jpg" alt="">
-      <h3>Ronnie Screwvala</h3>
-      <p>Founder of Swades Foundation, working on rural development and empowerment.</p>
-      <div class="buttons">
-         <a href="https://en.wikipedia.org/wiki/Ronnie_Screwvala" class="Learn More">Learn More</a>
-      </div>
-   </div>
+<!-- AOS JS for animations -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
-   <div class="preview" data-target="p-4">
-      <i class="fas fa-times"></i>
-      <img src="images/4.jpg" alt="">
-      <h3>Rajendra Singh</h3>
-      <p>Known as the "Waterman of India," working on water conservation.</p>
-      <div class="buttons">
-         <a href="https://en.wikipedia.org/wiki/Rajendra_Singh" class="Learn More">Learn More</a>
-      </div>
-   </div>
+<script>
+   AOS.init();
 
-   <div class="preview" data-target="p-5">
-      <i class="fas fa-times"></i>
-      <img src="images/5.jpeg" alt="">
-      <h3>Arunachalam Muruganantham</h3>
-      <p>Inventor of low-cost sanitary napkins, promoting menstrual hygiene.</p>
-      <div class="buttons">
-         <a href="https://en.wikipedia.org/wiki/Arunachalam_Muruganantham" class="Learn More">Learn More</a>
-      </div>
-   </div>
-
-   <div class="preview" data-target="p-6">
-      <i class="fas fa-times"></i>
-      <img src="images/6.jpg" alt="">
-      <h3>Dr. Govindappa Venkataswamy</h3>
-      <p>Founder of Aravind Eye Care System, providing affordable eye care.</p>
-      <div class="buttons">
-         <a href="https://en.wikipedia.org/wiki/Govindappa_Venkataswamy" class="Learn More">Learn More</a>
-      </div>
-   </div>
-
-   <div class="preview" data-target="p-7">
-      <i class="fas fa-times"></i>
-      <img src="images/7.jpg" alt="">
-      <h3>Shiv Nadar</h3>
-      <p>Founder of Shiv Nadar Foundation, promoting education and art.</p>
-      <div class="buttons">
-         <a href="https://en.wikipedia.org/wiki/Shiv_Nadar" class="Learn More">Learn More</a>
-      </div>
-   </div>
-
-   <div class="preview" data-target="p-8">
-      <i class="fas fa-times"></i>
-      <img src="images/8.jpg" alt="">
-      <h3>Kiran Bedi</h3>
-      <p>Social activist and former IPS officer, focuses on prison reform and women empowerment.</p>
-      <div class="buttons">
-         <a href="https://en.wikipedia.org/wiki/Kiran_Bedi" class="Learn More">Learn More</a>
-      </div>
-   </div>
-
-   
-
-   <div class="preview" data-target="p-10">
-      <i class="fas fa-times"></i>
-      <img src="images/9.jpg" alt="">
-      <h3>Madhu Pandit Dasa</h3>
-      <p>Chairman of Akshaya Patra Foundation, provides mid-day meals to school children.</p>
-      <div class="buttons">
-         <a href="https://en.wikipedia.org/wiki/Madhu_Pandit_Dasa" class="Learn More">Learn More</a>
-      </div>
-   </div>
-
- 
-
-   <div class="preview" data-target="p-12">
-      <i class="fas fa-times"></i>
-      <img src="images/10.jpg" alt="">
-      <h3>Elango Rangaswamy</h3>
-      <p>Former IAS officer turned social activist, known for his work on rural development in Tamil Nadu.</p>
-      <div class="buttons">
-         <a href="https://www.unsung.in/rangaswamy-elango/" class="Learn More">Learn More</a>
-      </div>
-   </div>
-
-   <div class="preview" data-target="p-13">
-      <i class="fas fa-times"></i>
-      <img src="images/paw.jpg" alt="">
-      <h3>Pawan Sinha</h3>
-      <p>Founder of Project Vision, provides free eye care services to underserved communities.</p>
-      <div class="buttons">
-         <a href="https://en.wikipedia.org/wiki/Pawan_Sinha" class="Learn More">Learn More</a>
-      </div>
-   </div>
-
-   <div class="preview" data-target="p-14">
-      <i class="fas fa-times"></i>
-      <img src="images/11.jpg" alt="">
-      <h3>Malini Mehra</h3>
-      <p>Founder of Centre for Social Markets, works on sustainable development and corporate responsibility.</p>
-      <div class="buttons">
-         <a href="https://malinimehra.com/about/" class="Learn More">Learn More</a>
-      </div>
-   </div>
-
-   <div class="preview" data-target="p-15">
-      <i class="fas fa-times"></i>
-      <img src="images/12.jpg" alt="">
-      <h3>Medha Patkar</h3>
-      <p>Social activist and founder of Narmada Bachao Andolan.</p>
-      <div class="buttons">
-         <a href="https://en.wikipedia.org/wiki/Medha_Patkar" class="Learn More">Learn More</a>
-      </div>
-   </div>
-
-   <div class="preview" data-target="p-16">
-      <i class="fas fa-times"></i>
-      <img src="images/13.jpg" alt="">
-      <h3>Sandeep Ahuja</h3>
-      <p>Founder of Operation ASHA, fighting tuberculosis through innovative healthcare solutions.</p>
-      <div class="buttons">
-         <a href="https://www.opasha.org/about/team/founder/" class="Learn More">Learn More</a>
-      </div>
-   </div>
-
-   <div class="preview" data-target="p-17">
-      <i class="fas fa-times"></i>
-      <img src="images/14.jpg" alt="">
-      <h3>Priya Naik</h3>
-      <p>Founder of Samhita Social Ventures, facilitates corporate social responsibility (CSR) initiatives for social impact.</p>
-      <div class="buttons">
-         <a href="https://www.lidji.org/post/priya-naik-founder-ceo-of-samhita-on-sustainable-livelihoods-in-india" class="Learn More">Learn More</a>
-      </div>
-   </div>
-
-   <div class="preview" data-target="p-18">
-      <i class="fas fa-times"></i>
-      <img src="images/15.jpg" alt="">
-      <h3>Dr. Sunitha Krishnan</h3>
-      <p>Founder of Prajwala, rescues and rehabilitates victims of sex trafficking and sexual exploitation.</p>
-      <div class="buttons">
-         <a href="https://en.wikipedia.org/wiki/Sunitha_Krishnan" class="Learn More">Learn More</a>
-      </div>
-   </div>
-
-   <div class="preview" data-target="p-19">
-      <i class="fas fa-times"></i>
-      <img src="images/16.jpg" alt="">
-      <h3>Manjul Bhargava</h3>
-      <p>Mathematician and founder of Bhargava's Ark, promotes mathematical education and outreach.</p>
-      <div class="buttons">
-         <a href="https://en.wikipedia.org/wiki/Manjul_Bhargava" class="Learn More">Learn More</a>
-      </div>
-   </div>
-
-   <div class="preview" data-target="p-20">
-      <i class="fas fa-times"></i>
-      <img src="images/17.jpg" alt="">
-      <h3>Dr. Abhay Bang</h3>
-      <p>Co-founder of SEARCH (Society for Education, Action and Research in Community Health), works on rural healthcare and community development.</p>
-      <div class="buttons">
-         <a href="https://en.wikipedia.org/wiki/Abhay_Bang" class="Learn More">Learn More</a>
-      </div>
-   </div>
-
-
-
-   <div class="preview" data-target="p-22">
-      <i class="fas fa-times"></i>
-      <img src="images/18.jpg" alt="">
-      <h3>Vikram Patel</h3>
-      <p>Psychiatrist and mental health advocate, works on mental health awareness and accessibility in India.</p>
-      <div class="buttons">
-         <a href="https://en.wikipedia.org/wiki/Vikram_Patel" class="Learn More">Learn More</a>
-      </div>
-   </div>
-
-
-
-   <div class="preview" data-target="p-24">
-      <i class="fas fa-times"></i>
-      <img src="images/19.jpg" alt="">
-      <h3>Brij Kothari</h3>
-      <p>Founder of PlanetRead, promotes literacy through Same Language Subtitling (SLS).</p>
-      <div class="buttons">
-         <a href="https://en.wikipedia.org/wiki/Brij_Kothari" class="Learn More">Learn More</a>
-      </div>
-   </div>
-
-   <div class="preview" data-target="p-25">
-      <i class="fas fa-times"></i>
-      <img src="images/20.jpg" alt="">
-      <h3>Deep Joshi</h3>
-      <p>Co-founder of PRADAN, works on rural livelihoods and women empowerment.</p>
-      <div class="buttons">
-         <a href="https://en.wikipedia.org/wiki/Deep_Joshi" class="Learn More">Learn More</a>
-      </div>
-   </div>
-</div>
+   document.querySelectorAll('.category').forEach(category => {
+      category.addEventListener('click', () => {
+         window.location.href = category.getAttribute('data-link');
+      });
+   });
+</script>
 
 </body>
 </html>
